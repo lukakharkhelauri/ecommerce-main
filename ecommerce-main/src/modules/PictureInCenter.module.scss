@@ -1,0 +1,105 @@
+@import './variables';
+
+
+.body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+
+
+.picture-div {
+    position: absolute;
+    width: 50%;
+    height: 82%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+
+    .cancel-btn {
+        z-index: 100;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 500px;
+    
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+  
+    .default-picture {
+      img {
+        width: 500px;
+        height: 500px;
+        border-radius: 13px;
+      }
+
+      button{
+        border-radius: 50%;
+        position: relative;
+        bottom: 220px;
+        right: 30px;
+        background-color: white;
+        width: 60px;
+        height: 60px;
+        padding: 8px 10px;
+        color: white;
+        align-items: center;
+        border: none;
+        img{
+          width: 25px;
+          height: 25px;
+          background-color: white;
+          color: $orange;
+        }
+      }
+    }
+  
+    .select-pictures {
+      width: 500px;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+  
+      button {
+        width: 80px;
+        height: 80px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        
+  
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            box-sizing: border-box; 
+        }
+  
+        img:hover {
+          border: 3px solid $orange;
+        }
+      }
+    }
+  }
+
+  .previous{
+    transform: rotate(180deg);
+    left: 30px !important;
+  }

@@ -1,0 +1,143 @@
+@import "./variables";
+
+.info-div {
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  margin-bottom: 70px;
+  @media only screen and (max-width:480px) {
+    width: 360px;
+    margin-left: -100px;
+  }
+
+  .product-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+
+    h5 {
+      word-spacing: 10px;
+      letter-spacing: 4px;
+      color: $orange;
+      margin: 20px 0;
+    }
+
+    h1 {
+      font-size: 45px;
+      @media only screen and (max-width:480px) {
+        font-size: 35px;
+      }
+      font-weight: 700;
+      margin: 0px 0px 20px;
+    }
+  }
+
+  .product-description {
+    display: flex;
+
+    P{
+        margin: 0px 0px 20px 0px;
+    }
+  }
+
+  .line-dotted {
+    color: hsl(220, 14%, 75%);
+    text-decoration: line-through;
+    margin: 10px 0px;
+  }
+
+  .product-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+
+    @media only screen and (max-width:480px) {
+      justify-content: space-between;
+      padding-right: 50px;
+    }
+
+    .price-div {
+      display: flex;
+      justify-content: start;
+      flex-direction: row;
+
+      h1 {
+        font-weight: 700;
+        margin: 0px;
+      }
+
+    }
+
+    .percent-div {
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20px;
+      background-color: hsl(25, 100%, 94%);
+      padding: 5px;
+      opacity: 1;
+      color: $orange;
+    }
+  }
+  .add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    column-gap: 30px;
+
+    @media only screen and (max-width:480px) {
+      flex-direction: column;
+    }
+
+    .quantity {
+      width: 150px;
+      height: 60px;
+      @media only screen and (max-width:480px) {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 30px;
+      }
+
+      border-radius: 7px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $Light-grayish-blue;
+
+      button {
+        width: 50px;
+        height: 60px;
+        background-color: $Light-grayish-blue;
+        border: none;
+        font-size: 25px;
+        border-radius: 7px;
+        cursor: pointer;
+        color: $orange;
+      }
+    }
+    .cart {
+      width: 250px;
+      height: 60px;
+      position: relative;
+      left: 15px;
+      @media only screen and (max-width:480px) {
+        width: 100%;
+        left: 0px;
+      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 15px;
+      border-radius: 7px;
+      background-color: $orange;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
